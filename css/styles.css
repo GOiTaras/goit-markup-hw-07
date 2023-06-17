@@ -321,6 +321,10 @@ img {
         display: inline-block;
         width: calc((100% - 24px) / 2);
     }
+
+    .advantage-item:nth-child(odd) {
+        margin-right: 24px;
+        }
     .advantage-list{
     }
 }
