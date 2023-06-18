@@ -280,8 +280,8 @@ img {
 
 .team-list {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .team-item {
@@ -1106,6 +1106,25 @@ flex-grow: 0;
 
 .footer-soc-nav {
     margin-right: 80px;
+}
+
+.footer-soc-link {
+    transition: background-color var(--transition-hover-timing);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: #31d0aa;
+}
+
+.footer-subscribe-btn {
+    cursor: pointer;
+        transition: background-color var(--transition-hover-timing);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background-color: #404BBF;
 }
 
 }
