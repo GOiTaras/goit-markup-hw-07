@@ -70,39 +70,103 @@ img {
 /*-----HEADER-----*/
 
 .header > .container {
+    position: relative;
     display: none;
+}
+
+
+
+
+
+.mobile-header {
+    padding: 24px 16px;
+    background-color: var(--white-background-color);
+}
+
+.mobile-header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link-header {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    display: inline-block;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    padding: 0px;
+}
+
+.logo-part {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2E2F42;
+}
+
+.menu-open-btn {
+    min-width: 32px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.menu-open-icon {
+    stroke: #2E2F42;
+    background-color: transparent;
 }
 
 .mob-menu {
     position: fixed;
+    top: 0;
+    padding: 24px 24px 40px 40px;
+    z-index: 100;
+    background-color: var(--white-background-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+
 }
 
 .menu-close-btn {
     width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background-color: #E7E9FC;
-        opacity: 0.1;
-        border: 1px solid #2E2F42;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 24px;
-        right: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    /* opacity: 0.1; */
+    border: 1px solid #2E2F42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 32px;
 }
 
 .menu-close-icon {
-    fill: #2E2F42;;
-}
-
-.mob-menu {
-    padding-left: 40px;
+    fill: #2E2F42;
+    background-color: transparent;
 }
 
 .mob-menu-list {
-    padding-top: 80px;
-    margin-bottom: 284px;
+    margin-bottom: 50px;
 }
 
 .mob-menu-item:not(:last-child) {
