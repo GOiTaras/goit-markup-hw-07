@@ -25,7 +25,8 @@
 
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
+        <div class="desktop-header">
+          <nav class="header-nav">
           <a class="logo-link-header link" href="./index.html"
             >WEB<span class="logo-part">Studio</span></a
           >
@@ -60,6 +61,110 @@
             </li>
           </ul>
         </address>
+        </div>
+        <div class="mobile-header">
+        <nav class="mobile-header-nav">
+          <a class="logo-link-header link" href="./index.html"
+            >WEB<span class="logo-part">Studio</span>
+          </a>
+          <button type="button" class="menu-open-btn" data-menu-open>
+            <svg class="menu-open-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-menu-address">
+            <ul class="mob-menu-address-list list">
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-header-address-item">
+                <a
+                  class="mob-menu-mail-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-menu-soc-list list">
+            <li class="mob-menu-soc-item">
+              <a
+                href=""
+                class="mob-menu-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mob-menu-soc-link link"
+              >
+                <svg class="mob-menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mob-menu-soc-link link"
+              >
+                <svg class="mob-menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mob-menu-soc-link link"
+              >
+                <svg class="mob-menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -375,5 +480,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

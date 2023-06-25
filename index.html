@@ -25,16 +25,18 @@
 
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
+        <div class="desktop-header">
+          <nav class="header-nav">
           <a class="logo-link-header link" href="./index.html"
-            >WEB<span class="logo-part">Studio</span>
-          </a>
+            >WEB<span class="logo-part">Studio</span></a>
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link current" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+              <a class="menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="">Contacts</a>
@@ -57,20 +59,20 @@
             </li>
           </ul>
         </address>
-      </div>
-      <div class="mobile-header">
-        <nav class="mobile-header-nav">
-          <a class="logo-link-header link" href="./index.html"
+        </div>
+          <div class="mobile-header">
+            <nav class="mobile-header-nav">
+              <a class="logo-link-header link" href="./index.html"
             >WEB<span class="logo-part">Studio</span>
           </a>
-          <button type="button" class="menu-open-btn" data-menu-open>
-            <svg class="menu-open-icon" width="32" height="22">
-              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+              <button type="button" class="menu-open-btn data-menu-open">
+                <svg class="menu-open-icon" width="32" height="22">
+                <use href="./images/icons.svg#icon-menu-hamburger"></use>
             </svg>
           </button>
         </nav>
       </div>
-      <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu is-hidden js-menu-container" data-menu>
         <div>
           <button type="button" class="menu-close-btn" data-menu-close>
             <svg class="menu-close-icon" width="8" height="8">
@@ -244,6 +246,7 @@
           <ul class="product-list list">
             <li class="product-item">
               <img
+                srcset="./images/imac.jpg 1x, ./images/imac@2x.jpg 2x"
                 class="img-item"
                 src="./images/imac.jpg"
                 alt="imac"
@@ -253,6 +256,7 @@
             </li>
             <li class="product-item">
               <img
+              srcset="./images/iphone.jpg 1x, ./images/iphone@2x.jpg 2x"
                 class="img-item"
                 src="./images/iphone.jpg"
                 alt="iphone"
@@ -262,6 +266,7 @@
             </li>
             <li class="product-item">
               <img
+              srcset="./images/macbook.jpg 1x, ./images/macbook@2x.jpg 2x"
                 class="img-item"
                 src="./images/macbook.jpg"
                 alt="macbook"
@@ -277,17 +282,17 @@
 
       <section class="our-team">
         <div class="container">
-          <h2 class="team">Our Team</h2>
+          <h2 class="team-title">Our Team</h2>
 
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 class="img-item"
                 src="./images/mark.jpg"
                 alt="mark_Product Designer"
                 width="264"
-                height="260"
-              />
+                height="260"/>
               <div class="card-content">
                 <h3 class="team-item-title">Mark Guerrero</h3>
                 <p class="team-item-text">Product Designer</p>
@@ -345,6 +350,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 class="img-item"
                 src="./images/tom.jpg"
                 alt="tom_Frontend Developer"
@@ -405,6 +411,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 class="img-item"
                 src="./images/camila.jpg"
                 alt="camila_Marketing"
@@ -465,6 +472,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 class="img-item"
                 src="./images/daniel.jpg"
                 alt="daniel_UI Designer"
